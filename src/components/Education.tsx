@@ -1,20 +1,27 @@
 import { Card } from "@/components/ui/card";
-import { GraduationCap } from "lucide-react";
+import { GraduationCap, Award } from "lucide-react";
 
 const Education = () => {
   const education = [
     {
       degree: "Master of Science in Computer Science",
-      institution: "University Name",
-      duration: "2021 - 2023",
-      description: "Specialized in Software Engineering and Distributed Systems. Thesis on microservices architecture and cloud computing."
+      institution: "DePaul University",
+      location: "Chicago, Illinois",
+      duration: "Sept 2023 - Nov 2025",
+      description: "Specializing in Software Engineering, Machine Learning, and Distributed Systems. Working on research projects involving automated software analysis and machine learning applications in software engineering."
     },
     {
-      degree: "Bachelor of Technology in Computer Science",
-      institution: "University Name",
-      duration: "2017 - 2021",
-      description: "Focus on Data Structures, Algorithms, and Web Technologies. Active member of coding club and tech society."
+      degree: "Bachelor of Engineering in Electronics and Communication",
+      institution: "Sri Eshwar College of Engineering",
+      location: "Coimbatore, India",
+      duration: "April 2015 - May 2019",
+      description: "Built strong foundation in computer science fundamentals, data structures, algorithms, and software development. Active participation in coding clubs and technical societies."
     }
+  ];
+
+  const certifications = [
+    "Docker Fundamentals Certification",
+    "Oracle Certified Java Programmer (OCJP) - Java 8.0"
   ];
 
   return (
@@ -49,9 +56,10 @@ const Education = () => {
                       {edu.duration}
                     </span>
                   </div>
-                  <h4 className="text-lg font-semibold text-primary mb-3">
+                  <h4 className="text-lg font-semibold text-primary mb-1">
                     {edu.institution}
                   </h4>
+                  <p className="text-sm text-muted-foreground mb-3">{edu.location}</p>
                   <p className="text-foreground/80 leading-relaxed">
                     {edu.description}
                   </p>
@@ -59,6 +67,28 @@ const Education = () => {
               </div>
             </Card>
           ))}
+
+          {/* Certifications */}
+          <Card className="p-6 sm:p-8 bg-gradient-to-br from-primary to-secondary text-primary-foreground animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
+                <Award className="w-6 h-6 sm:w-7 sm:h-7" />
+              </div>
+              <div className="flex-1">
+                <h3 className="text-xl sm:text-2xl font-bold mb-4">
+                  Certifications
+                </h3>
+                <ul className="space-y-2">
+                  {certifications.map((cert, idx) => (
+                    <li key={idx} className="flex items-start gap-2">
+                      <span className="text-primary-foreground/80 mt-1">•</span>
+                      <span className="text-primary-foreground/90">{cert}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </Card>
         </div>
       </div>
     </section>

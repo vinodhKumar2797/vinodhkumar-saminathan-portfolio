@@ -26,7 +26,7 @@ const Footer = () => {
               <Linkedin className="w-6 h-6" />
             </a>
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:vsamina1@depaul.edu"
               className="text-foreground/70 hover:text-primary transition-colors"
             >
               <Mail className="w-6 h-6" />
@@ -36,7 +36,7 @@ const Footer = () => {
           {/* Copyright */}
           <div className="text-center text-sm text-foreground/60">
             <p className="flex items-center gap-2 justify-center">
-              © {currentYear} Your Name. Built with
+              © {currentYear} Vinodhkumar Saminathan. Built with
               <Heart className="w-4 h-4 text-red-500 fill-red-500" />
               using React & Spring Boot
             </p>

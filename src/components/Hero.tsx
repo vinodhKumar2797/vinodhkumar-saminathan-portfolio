@@ -2,16 +2,20 @@ import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, Download } from "lucide-react";
 
 const Hero = () => {
-  const codeSnippet = `const developer = {
-  name: 'Your Name',
-  skills: ['Java', 'Spring Boot', 
-           'React.js', 'Redux'],
-  backend: ['Java', 'Spring Boot'],
-  frontend: ['React.js', 'Redux'],
+const codeSnippet = `const developer = {
+  name: 'Vinodhkumar Saminathan',
+  role: 'Software Engineer',
+  experience: '4+ years',
+  backend: ['Java', 'Spring Boot', 
+            'Microservices', 'Kafka'],
+  frontend: ['React.js', 'TypeScript', 
+             'GraphQL', 'Tailwind CSS'],
+  cloud: ['AWS', 'Azure', 'Docker', 
+          'Kubernetes'],
   passionate: true,
   hireable: () => {
     return this.passionate && 
-           this.skills.length > 0;
+           this.experience > '4 years';
   }
 };`;
 
@@ -26,10 +30,10 @@ const Hero = () => {
                 Hey there,
               </h2>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold">
-                I am <span className="text-primary">YOUR NAME.</span>
+                I am <span className="text-primary">Vinodhkumar Saminathan.</span>
               </h1>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
-                I <span className="text-secondary">Turn Ideas into Code.</span>
+                I <span className="text-secondary">Build Scalable Systems.</span>
               </h1>
             </div>
 
@@ -52,7 +56,7 @@ const Hero = () => {
                 <Github className="w-6 h-6 sm:w-7 sm:h-7" />
               </a>
               <a
-                href="mailto:your.email@example.com"
+                href="mailto:vsamina1@depaul.edu"
                 className="text-primary hover:text-secondary transition-colors"
               >
                 <Mail className="w-6 h-6 sm:w-7 sm:h-7" />
@@ -94,22 +98,34 @@ const Hero = () => {
                   {"{\n"}
                   {"  "}
                   <span className="text-[hsl(var(--code-string))]">name</span>:{" "}
-                  <span className="text-[hsl(var(--code-keyword))]">'Your Name'</span>,{"\n"}
+                  <span className="text-[hsl(var(--code-keyword))]">'Vinodhkumar Saminathan'</span>,{"\n"}
                   {"  "}
-                  <span className="text-[hsl(var(--code-string))]">skills</span>: [
-                  <span className="text-[hsl(var(--code-keyword))]">'Java'</span>,{" "}
-                  <span className="text-[hsl(var(--code-keyword))]">'Spring Boot'</span>, {"\n"}
-                  {"           "}
-                  <span className="text-[hsl(var(--code-keyword))]">'React.js'</span>,{" "}
-                  <span className="text-[hsl(var(--code-keyword))]">'Redux'</span>],{"\n"}
+                  <span className="text-[hsl(var(--code-string))]">role</span>:{" "}
+                  <span className="text-[hsl(var(--code-keyword))]">'Software Engineer'</span>,{"\n"}
+                  {"  "}
+                  <span className="text-[hsl(var(--code-string))]">experience</span>:{" "}
+                  <span className="text-[hsl(var(--code-keyword))]">'4+ years'</span>,{"\n"}
                   {"  "}
                   <span className="text-[hsl(var(--code-string))]">backend</span>: [
                   <span className="text-[hsl(var(--code-keyword))]">'Java'</span>,{" "}
-                  <span className="text-[hsl(var(--code-keyword))]">'Spring Boot'</span>],{"\n"}
+                  <span className="text-[hsl(var(--code-keyword))]">'Spring Boot'</span>, {"\n"}
+                  {"            "}
+                  <span className="text-[hsl(var(--code-keyword))]">'Microservices'</span>,{" "}
+                  <span className="text-[hsl(var(--code-keyword))]">'Kafka'</span>],{"\n"}
                   {"  "}
                   <span className="text-[hsl(var(--code-string))]">frontend</span>: [
                   <span className="text-[hsl(var(--code-keyword))]">'React.js'</span>,{" "}
-                  <span className="text-[hsl(var(--code-keyword))]">'Redux'</span>],{"\n"}
+                  <span className="text-[hsl(var(--code-keyword))]">'TypeScript'</span>, {"\n"}
+                  {"             "}
+                  <span className="text-[hsl(var(--code-keyword))]">'GraphQL'</span>,{" "}
+                  <span className="text-[hsl(var(--code-keyword))]">'Tailwind CSS'</span>],{"\n"}
+                  {"  "}
+                  <span className="text-[hsl(var(--code-string))]">cloud</span>: [
+                  <span className="text-[hsl(var(--code-keyword))]">'AWS'</span>,{" "}
+                  <span className="text-[hsl(var(--code-keyword))]">'Azure'</span>,{" "}
+                  <span className="text-[hsl(var(--code-keyword))]">'Docker'</span>, {"\n"}
+                  {"          "}
+                  <span className="text-[hsl(var(--code-keyword))]">'Kubernetes'</span>],{"\n"}
                   {"  "}
                   <span className="text-[hsl(var(--code-string))]">passionate</span>:{" "}
                   <span className="text-[hsl(var(--code-keyword))]">true</span>,{"\n"}
@@ -120,7 +136,7 @@ const Hero = () => {
                   <span className="text-[hsl(var(--code-text))]">this</span>.passionate &&{" "}
                   {"\n"}
                   {"           "}
-                  <span className="text-[hsl(var(--code-text))]">this</span>.skills.length &gt; 0;{"\n"}
+                  <span className="text-[hsl(var(--code-text))]">this</span>.experience &gt; <span className="text-[hsl(var(--code-keyword))]">'4 years'</span>;{"\n"}
                   {"  }"}
                   {"\n"};
                 </code>

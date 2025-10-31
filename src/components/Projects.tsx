@@ -5,23 +5,44 @@ import { Github, ExternalLink } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Full-stack e-commerce application with Spring Boot backend and React frontend. Features include user authentication, product catalog, shopping cart, and payment integration.",
-      technologies: ["Spring Boot", "React.js", "Redux", "PostgreSQL", "Stripe"],
+      title: "LinkedIn Profile ETL Pipeline",
+      description: "Built incremental ETL for LinkedIn profiles & images with idempotent runs. Reduced full reloads by 70% and validation effort by 40%. Implemented efficient data processing with change detection and validation mechanisms.",
+      technologies: ["Java", "ETL", "Data Processing", "Pipeline Architecture"],
       github: "#",
       demo: "#"
     },
     {
-      title: "Task Management System",
-      description: "Collaborative task management tool built with microservices architecture. Real-time updates, team collaboration features, and project tracking capabilities.",
-      technologies: ["Java", "Spring Boot", "React.js", "WebSocket", "MongoDB"],
+      title: "E-Commerce Microservices Platform",
+      description: "Applied SOLID principles with Singleton/Factory/Builder patterns to modularize authentication, catalog, and order services. Accelerated delivery by 25% and lifted test coverage to 65%. Implemented scalable microservices architecture.",
+      technologies: ["Spring Boot", "Microservices", "Design Patterns", "JUnit"],
       github: "#",
       demo: "#"
     },
     {
-      title: "Blog Platform",
-      description: "Modern blogging platform with rich text editor, commenting system, and social features. RESTful API design with JWT authentication.",
-      technologies: ["Spring Boot", "React.js", "Redux Toolkit", "MySQL"],
+      title: "High-Concurrency Search System",
+      description: "Implemented high-concurrency client-server with parallel indexing and multi-term search using TF-IDF/BM25 algorithms. Sustained high QPS with low p95 latency. Shipped with reproducible scripts and comprehensive documentation.",
+      technologies: ["Java", "Concurrent Programming", "Search Algorithms", "Performance Optimization"],
+      github: "#",
+      demo: "#"
+    },
+    {
+      title: "Automated Testing Framework",
+      description: "Established automated testing stack with Cucumber (BDD), Selenium WebDriver, and TestNG. Standardized Page Object patterns and created living documentation. Improved test coverage and reliability across microservices.",
+      technologies: ["Cucumber", "Selenium", "TestNG", "BDD", "Test Automation"],
+      github: "#",
+      demo: "#"
+    },
+    {
+      title: "Real-Time Event Processing System",
+      description: "Integrated Kafka for real-time messaging across distributed systems. Implemented event-driven architecture that reduced latency by 30% and enabled seamless distributed communication with fault tolerance.",
+      technologies: ["Kafka", "Spring Boot", "Event-Driven Architecture", "Distributed Systems"],
+      github: "#",
+      demo: "#"
+    },
+    {
+      title: "Cloud-Native Application Deployment",
+      description: "Deployed Dockerized microservices on Kubernetes with AWS infrastructure (EKS/ECS, Lambda, DynamoDB). Implemented Infrastructure as Code using Terraform and established CI/CD pipelines for automated deployments.",
+      technologies: ["Docker", "Kubernetes", "AWS", "Terraform", "CI/CD"],
       github: "#",
       demo: "#"
     }
@@ -39,7 +60,7 @@ const Projects = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-7xl mx-auto">
           {projects.map((project, idx) => (
             <Card
               key={idx}
@@ -50,7 +71,7 @@ const Projects = () => {
                 <h3 className="text-xl sm:text-2xl font-bold text-foreground group-hover:text-primary transition-colors">
                   {project.title}
                 </h3>
-                <p className="text-foreground/80 leading-relaxed">
+                <p className="text-foreground/80 leading-relaxed text-sm">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2">

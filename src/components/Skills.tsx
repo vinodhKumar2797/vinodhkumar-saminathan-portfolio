@@ -4,19 +4,29 @@ import { Card } from "@/components/ui/card";
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Backend",
-      skills: ["Java", "Spring Boot", "REST APIs", "Microservices", "JPA/Hibernate", "MySQL", "PostgreSQL"],
+      title: "Backend & Languages",
+      skills: ["Java", "Spring Boot", "Hibernate/JPA", "Node.js", "Python", "C++", "Kafka", "Microservices", "REST APIs", "SOAP"],
       color: "primary"
     },
     {
       title: "Frontend",
-      skills: ["React.js", "Redux Toolkit", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind CSS"],
+      skills: ["React.js", "TypeScript", "JavaScript", "GraphQL", "HTML5", "CSS3", "Tailwind CSS", "jQuery"],
       color: "secondary"
     },
     {
-      title: "Tools & Others",
-      skills: ["Git", "Docker", "Maven", "Gradle", "Postman", "Jenkins", "AWS"],
+      title: "Databases",
+      skills: ["MySQL", "PostgreSQL", "Oracle", "MongoDB", "Redis", "DynamoDB", "PL/SQL"],
       color: "accent"
+    },
+    {
+      title: "Cloud & DevOps",
+      skills: ["AWS", "Azure", "Docker", "Kubernetes", "Jenkins", "Terraform", "CI/CD", "ELK Stack", "Datadog"],
+      color: "primary"
+    },
+    {
+      title: "Testing & Tools",
+      skills: ["JUnit", "TestNG", "Mockito", "Cucumber", "Selenium", "Git", "Maven", "Postman"],
+      color: "secondary"
     }
   ];
 
@@ -32,7 +42,7 @@ const Skills = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-7xl mx-auto">
           {skillCategories.map((category, idx) => (
             <Card
               key={category.title}

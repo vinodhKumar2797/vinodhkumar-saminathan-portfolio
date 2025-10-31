@@ -27,19 +27,19 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "your.email@example.com",
-      href: "mailto:your.email@example.com"
+      value: "vsamina1@depaul.edu",
+      href: "mailto:vsamina1@depaul.edu"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "872-330-2924",
+      href: "tel:8723302924"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "Your City, Country",
+      value: "Chicago, Illinois",
       href: "#"
     }
   ];

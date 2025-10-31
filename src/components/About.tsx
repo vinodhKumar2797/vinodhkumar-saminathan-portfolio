@@ -32,21 +32,23 @@ const About = () => {
           <div className="space-y-6 order-1 lg:order-2 animate-fade-in-up">
             <Card className="p-6 sm:p-8 bg-card border-2 hover:border-primary/50 transition-all duration-300">
               <p className="text-base sm:text-lg text-foreground/90 leading-relaxed">
-                Hey there, I'm <span className="font-bold text-primary">YOUR NAME</span>! 
-                I'm a full-stack developer passionate about building scalable applications with{" "}
-                <span className="font-semibold text-secondary">Java</span>,{" "}
+                Hey there, I'm <span className="font-bold text-primary">Vinodhkumar Saminathan</span>! 
+                Software Engineer with <span className="font-semibold text-secondary">4+ years</span> of experience 
+                specializing in cloud-native{" "}
+                <span className="font-semibold text-secondary">Java services</span> and{" "}
+                <span className="font-semibold text-secondary">distributed systems</span>.
+              </p>
+              <p className="text-base sm:text-lg text-foreground/80 leading-relaxed mt-4">
+                I design and ship resilient microservices with{" "}
                 <span className="font-semibold text-secondary">Spring Boot</span>,{" "}
-                <span className="font-semibold text-secondary">React.js</span>, and{" "}
-                <span className="font-semibold text-secondary">Redux Toolkit</span>.
+                <span className="font-semibold text-secondary">Kafka</span>,{" "}
+                <span className="font-semibold text-secondary">Docker/Kubernetes</span>, and automated pipelines 
+                on <span className="font-semibold text-secondary">Azure</span> and{" "}
+                <span className="font-semibold text-secondary">AWS</span>—improving reliability, latency, and cost at scale.
               </p>
               <p className="text-base sm:text-lg text-foreground/80 leading-relaxed mt-4">
-                I love turning complex problems into elegant solutions and creating intuitive user experiences. 
-                When I'm not coding, you'll find me exploring new technologies, contributing to open source, 
-                or sharing knowledge with the developer community.
-              </p>
-              <p className="text-base sm:text-lg text-foreground/80 leading-relaxed mt-4">
-                My approach combines robust backend architecture with modern, responsive frontend design. 
-                I believe in writing clean, maintainable code and continuously improving my craft.
+                Currently pursuing <span className="font-semibold text-primary">M.S. in Computer Science</span> at DePaul University 
+                while working as a Research Assistant, building Java mining pipelines and machine learning models for software engineering research.
               </p>
             </Card>
           </div>

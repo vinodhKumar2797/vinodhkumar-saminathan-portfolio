@@ -4,25 +4,32 @@ import { Briefcase } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      company: "Company Name 1",
-      position: "Full Stack Developer",
-      duration: "2022 - Present",
-      description: "Developed and maintained full-stack applications using Java Spring Boot for backend and React.js for frontend. Implemented Redux Toolkit for state management and optimized application performance.",
-      technologies: ["Java", "Spring Boot", "React.js", "Redux", "PostgreSQL"]
+      company: "DePaul University",
+      position: "Research Assistant",
+      duration: "Sep 2024 - Nov 2025",
+      description: "Built a Java mining pipeline using Maven, JGit, RefactoringMiner, and Designite to auto-generate labeled datasets, reducing data-prep time by 60% and scaling to 200k+ rows. Trained Random Forest, XGBoost, and SVM models with k-fold CV, boosting macro-F1 by 12-18% over baselines.",
+      technologies: ["Java", "Maven", "Apache Spark", "Weka", "Machine Learning", "ETL"]
     },
     {
-      company: "Company Name 2",
-      position: "Backend Developer",
-      duration: "2020 - 2022",
-      description: "Built scalable REST APIs using Spring Boot and Java. Worked on microservices architecture and integrated third-party services. Collaborated with frontend team for seamless integration.",
-      technologies: ["Java", "Spring Boot", "MySQL", "Docker", "AWS"]
+      company: "Market Simplified",
+      position: "Software Engineer",
+      duration: "June 2022 - Aug 2023",
+      description: "Built and maintained microservices with Spring Boot, Hibernate/JPA, and RESTful APIs. Integrated Kafka for real-time messaging, cutting latency by 30%. Deployed Dockerized services on Kubernetes and leveraged AWS (EKS/ECS, Lambda, EMR, DynamoDB) with Terraform. Improved observability with Datadog, ELK, and Istio.",
+      technologies: ["Spring Boot", "Kafka", "Kubernetes", "AWS", "Docker", "Terraform", "Datadog", "ELK"]
     },
     {
-      company: "Company Name 3",
-      position: "Junior Developer",
-      duration: "2019 - 2020",
-      description: "Started career as a junior developer working on both frontend and backend. Learned industry best practices and agile methodologies. Contributed to multiple projects and enhanced technical skills.",
-      technologies: ["React.js", "Node.js", "MongoDB", "Git"]
+      company: "Virtusa",
+      position: "Software Engineer",
+      duration: "June 2019 - June 2022",
+      description: "Designed and built resilient Spring Boot services and REST/SOAP APIs. Established automated testing stack with Cucumber (BDD), Selenium WebDriver, and TestNG. Hardened CI/CD pipelines with Jenkins and Bamboo. Integrated JMS/Solace and tuned persistence with Hibernate/JPA against SQL Server, Oracle, and PostgreSQL.",
+      technologies: ["Spring Boot", "REST/SOAP APIs", "Cucumber", "Selenium", "Jenkins", "Hibernate", "PostgreSQL"]
+    },
+    {
+      company: "Virtusa",
+      position: "Software Engineer Intern",
+      duration: "Jan 2019 - June 2019",
+      description: "Contributed to Spring MVC/Spring Boot microservices and REST/SOAP endpoints. Wrote unit/integration tests with JUnit, TestNG, and Mockito, improving coverage by 25%. Built ETL helpers and messaging POCs with JMS/Kafka and Apache Camel 3. Optimized SQL queries for Oracle/PostgreSQL.",
+      technologies: ["Spring Boot", "JUnit", "Mockito", "Kafka", "Apache Camel", "Oracle"]
     }
   ];
 
