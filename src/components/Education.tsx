@@ -1,0 +1,68 @@
+import { Card } from "@/components/ui/card";
+import { GraduationCap } from "lucide-react";
+
+const Education = () => {
+  const education = [
+    {
+      degree: "Master of Science in Computer Science",
+      institution: "University Name",
+      duration: "2021 - 2023",
+      description: "Specialized in Software Engineering and Distributed Systems. Thesis on microservices architecture and cloud computing."
+    },
+    {
+      degree: "Bachelor of Technology in Computer Science",
+      institution: "University Name",
+      duration: "2017 - 2021",
+      description: "Focus on Data Structures, Algorithms, and Web Technologies. Active member of coding club and tech society."
+    }
+  ];
+
+  return (
+    <section id="education" className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-[hsl(var(--section-bg))]">
+      <div className="container mx-auto">
+        <div className="text-center mb-12">
+          <h3 className="text-sm font-semibold text-primary uppercase tracking-wider mb-2">
+            ACADEMIC BACKGROUND
+          </h3>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground">
+            Education
+          </h2>
+        </div>
+
+        <div className="max-w-4xl mx-auto space-y-6">
+          {education.map((edu, idx) => (
+            <Card
+              key={idx}
+              className="p-6 sm:p-8 bg-card border-l-4 border-secondary hover:shadow-xl transition-all duration-300 animate-fade-in-up"
+              style={{ animationDelay: `${idx * 0.1}s` }}
+            >
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-secondary/10 flex items-center justify-center flex-shrink-0">
+                  <GraduationCap className="w-6 h-6 sm:w-7 sm:h-7 text-secondary" />
+                </div>
+                <div className="flex-1">
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-3">
+                    <h3 className="text-xl sm:text-2xl font-bold text-foreground">
+                      {edu.degree}
+                    </h3>
+                    <span className="text-sm font-semibold text-secondary">
+                      {edu.duration}
+                    </span>
+                  </div>
+                  <h4 className="text-lg font-semibold text-primary mb-3">
+                    {edu.institution}
+                  </h4>
+                  <p className="text-foreground/80 leading-relaxed">
+                    {edu.description}
+                  </p>
+                </div>
+              </div>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Education;
