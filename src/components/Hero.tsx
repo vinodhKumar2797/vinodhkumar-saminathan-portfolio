@@ -2,22 +2,29 @@ import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, Download } from "lucide-react";
 
 const Hero = () => {
-const codeSnippet = `const developer = {
-  name: 'Vinodhkumar Saminathan',
-  role: 'Software Engineer',
-  experience: '4+ years',
-  backend: ['Java', 'Spring Boot', 
-            'Microservices', 'Kafka'],
-  frontend: ['React.js', 'TypeScript', 
-             'GraphQL', 'Tailwind CSS'],
-  cloud: ['AWS', 'Azure', 'Docker', 
-          'Kubernetes'],
-  passionate: true,
-  hireable: () => {
+const codeSnippet = `public class Developer {
+  private String name = "Vinodhkumar Saminathan";
+  private String role = "Software Engineer";
+  private String experience = "4+ years";
+  private String[] backend = {
+    "Java", "Spring Boot", 
+    "Microservices", "Kafka"
+  };
+  private String[] frontend = {
+    "React.js", "TypeScript",
+    "GraphQL", "Tailwind CSS"
+  };
+  private String[] cloud = {
+    "AWS", "Azure", "Docker",
+    "Kubernetes"
+  };
+  private boolean passionate = true;
+  
+  public boolean isHireable() {
     return this.passionate && 
-           this.experience > '4 years';
+           this.experience.contains("4+");
   }
-};`;
+}`;
 
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[hsl(var(--hero-gradient-from))] to-[hsl(var(--hero-gradient-to))] pt-20 px-4 sm:px-6 lg:px-8">
@@ -93,52 +100,77 @@ const codeSnippet = `const developer = {
               </div>
               <pre className="text-sm sm:text-base overflow-x-auto">
                 <code className="text-[hsl(var(--code-text))] font-mono leading-relaxed">
-                  <span className="text-[hsl(var(--code-keyword))]">const</span>{" "}
-                  <span className="text-[hsl(var(--code-text))]">developer</span> ={" "}
+                  <span className="text-[hsl(var(--code-keyword))]">public class</span>{" "}
+                  <span className="text-[hsl(var(--code-text))]">Developer</span>{" "}
                   {"{\n"}
                   {"  "}
-                  <span className="text-[hsl(var(--code-string))]">name</span>:{" "}
-                  <span className="text-[hsl(var(--code-keyword))]">'Vinodhkumar Saminathan'</span>,{"\n"}
+                  <span className="text-[hsl(var(--code-keyword))]">private</span>{" "}
+                  <span className="text-[hsl(var(--code-keyword))]">String</span>{" "}
+                  <span className="text-[hsl(var(--code-string))]">name</span> ={" "}
+                  <span className="text-[hsl(var(--code-keyword))]">"Vinodhkumar Saminathan"</span>;{"\n"}
                   {"  "}
-                  <span className="text-[hsl(var(--code-string))]">role</span>:{" "}
-                  <span className="text-[hsl(var(--code-keyword))]">'Software Engineer'</span>,{"\n"}
+                  <span className="text-[hsl(var(--code-keyword))]">private</span>{" "}
+                  <span className="text-[hsl(var(--code-keyword))]">String</span>{" "}
+                  <span className="text-[hsl(var(--code-string))]">role</span> ={" "}
+                  <span className="text-[hsl(var(--code-keyword))]">"Software Engineer"</span>;{"\n"}
                   {"  "}
-                  <span className="text-[hsl(var(--code-string))]">experience</span>:{" "}
-                  <span className="text-[hsl(var(--code-keyword))]">'4+ years'</span>,{"\n"}
+                  <span className="text-[hsl(var(--code-keyword))]">private</span>{" "}
+                  <span className="text-[hsl(var(--code-keyword))]">String</span>{" "}
+                  <span className="text-[hsl(var(--code-string))]">experience</span> ={" "}
+                  <span className="text-[hsl(var(--code-keyword))]">"4+ years"</span>;{"\n"}
                   {"  "}
-                  <span className="text-[hsl(var(--code-string))]">backend</span>: [
-                  <span className="text-[hsl(var(--code-keyword))]">'Java'</span>,{" "}
-                  <span className="text-[hsl(var(--code-keyword))]">'Spring Boot'</span>, {"\n"}
-                  {"            "}
-                  <span className="text-[hsl(var(--code-keyword))]">'Microservices'</span>,{" "}
-                  <span className="text-[hsl(var(--code-keyword))]">'Kafka'</span>],{"\n"}
+                  <span className="text-[hsl(var(--code-keyword))]">private</span>{" "}
+                  <span className="text-[hsl(var(--code-keyword))]">String</span>[] backend = {"{\n"}
+                  {"    "}
+                  <span className="text-[hsl(var(--code-keyword))]">"Java"</span>,{" "}
+                  <span className="text-[hsl(var(--code-keyword))]">"Spring Boot"</span>,{" "}
+                  {"\n"}
+                  {"    "}
+                  <span className="text-[hsl(var(--code-keyword))]">"Microservices"</span>,{" "}
+                  <span className="text-[hsl(var(--code-keyword))]">"Kafka"</span>
+                  {"\n"}
+                  {"  "};{"\n"}
                   {"  "}
-                  <span className="text-[hsl(var(--code-string))]">frontend</span>: [
-                  <span className="text-[hsl(var(--code-keyword))]">'React.js'</span>,{" "}
-                  <span className="text-[hsl(var(--code-keyword))]">'TypeScript'</span>, {"\n"}
-                  {"             "}
-                  <span className="text-[hsl(var(--code-keyword))]">'GraphQL'</span>,{" "}
-                  <span className="text-[hsl(var(--code-keyword))]">'Tailwind CSS'</span>],{"\n"}
+                  <span className="text-[hsl(var(--code-keyword))]">private</span>{" "}
+                  <span className="text-[hsl(var(--code-keyword))]">String</span>[] frontend = {"{\n"}
+                  {"    "}
+                  <span className="text-[hsl(var(--code-keyword))]">"React.js"</span>,{" "}
+                  <span className="text-[hsl(var(--code-keyword))]">"TypeScript"</span>,{"\n"}
+                  {"    "}
+                  <span className="text-[hsl(var(--code-keyword))]">"GraphQL"</span>,{" "}
+                  <span className="text-[hsl(var(--code-keyword))]">"Tailwind CSS"</span>
+                  {"\n"}
+                  {"  "};{"\n"}
                   {"  "}
-                  <span className="text-[hsl(var(--code-string))]">cloud</span>: [
-                  <span className="text-[hsl(var(--code-keyword))]">'AWS'</span>,{" "}
-                  <span className="text-[hsl(var(--code-keyword))]">'Azure'</span>,{" "}
-                  <span className="text-[hsl(var(--code-keyword))]">'Docker'</span>, {"\n"}
-                  {"          "}
-                  <span className="text-[hsl(var(--code-keyword))]">'Kubernetes'</span>],{"\n"}
+                  <span className="text-[hsl(var(--code-keyword))]">private</span>{" "}
+                  <span className="text-[hsl(var(--code-keyword))]">String</span>[] cloud = {"{\n"}
+                  {"    "}
+                  <span className="text-[hsl(var(--code-keyword))]">"AWS"</span>,{" "}
+                  <span className="text-[hsl(var(--code-keyword))]">"Azure"</span>,{" "}
+                  <span className="text-[hsl(var(--code-keyword))]">"Docker"</span>,{"\n"}
+                  {"    "}
+                  <span className="text-[hsl(var(--code-keyword))]">"Kubernetes"</span>
+                  {"\n"}
+                  {"  "};{"\n"}
                   {"  "}
-                  <span className="text-[hsl(var(--code-string))]">passionate</span>:{" "}
-                  <span className="text-[hsl(var(--code-keyword))]">true</span>,{"\n"}
+                  <span className="text-[hsl(var(--code-keyword))]">private</span>{" "}
+                  <span className="text-[hsl(var(--code-keyword))]">boolean</span>{" "}
+                  <span className="text-[hsl(var(--code-string))]">passionate</span> ={" "}
+                  <span className="text-[hsl(var(--code-keyword))]">true</span>;{"\n"}
+                  {"\n"}
                   {"  "}
-                  <span className="text-[hsl(var(--code-string))]">hireable</span>: () ={">"} {"{\n"}
+                  <span className="text-[hsl(var(--code-keyword))]">public</span>{" "}
+                  <span className="text-[hsl(var(--code-keyword))]">boolean</span>{" "}
+                  <span className="text-[hsl(var(--code-string))]">isHireable</span>() {"{\n"}
                   {"    "}
                   <span className="text-[hsl(var(--code-keyword))]">return</span>{" "}
                   <span className="text-[hsl(var(--code-text))]">this</span>.passionate &&{" "}
                   {"\n"}
                   {"           "}
-                  <span className="text-[hsl(var(--code-text))]">this</span>.experience &gt; <span className="text-[hsl(var(--code-keyword))]">'4 years'</span>;{"\n"}
+                  <span className="text-[hsl(var(--code-text))]">this</span>.experience.contains(<span className="text-[hsl(var(--code-keyword))]">"4+"</span>);{"\n"}
                   {"  }"}
-                  {"\n"};
+                  {"\n"}
+                  {"}"}
                 </code>
               </pre>
             </div>
