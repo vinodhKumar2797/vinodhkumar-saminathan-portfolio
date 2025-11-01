@@ -47,7 +47,7 @@ const codeSnippet = `public class Developer {
             {/* Social Links */}
             <div className="flex gap-4 justify-center lg:justify-start">
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/vinodhk27/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary hover:text-secondary transition-colors"
@@ -55,7 +55,7 @@ const codeSnippet = `public class Developer {
                 <Linkedin className="w-6 h-6 sm:w-7 sm:h-7" />
               </a>
               <a
-                href="https://github.com"
+                href="https://github.com/vinodhKumar2797"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary hover:text-secondary transition-colors"
