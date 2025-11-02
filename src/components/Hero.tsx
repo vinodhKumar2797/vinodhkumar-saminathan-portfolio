@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, Download } from "lucide-react";
+import resumePdf from "../assests/pdf/Vinodhkumar_Saminathan_CV.pdf";
 
 const Hero = () => {
 const codeSnippet = `public class Developer {
@@ -78,15 +79,20 @@ const codeSnippet = `public class Developer {
                 onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 CONTACT ME
+                
               </Button>
+              <a href={resumePdf} target="_blank" >
               <Button
                 size="lg"
                 variant="outline"
                 className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground font-semibold px-8 rounded-full"
               >
+                
                 <Download className="w-4 h-4 mr-2" />
                 GET RESUME
+
               </Button>
+              </a>
             </div>
           </div>
 

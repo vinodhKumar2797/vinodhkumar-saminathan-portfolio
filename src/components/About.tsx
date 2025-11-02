@@ -1,5 +1,7 @@
 import { Card } from "@/components/ui/card";
-
+import Image from "next/image";
+import placeholder from "@/public/placeholder.svg";
+import profile from "../assests/vinodh.jpeg";
 const About = () => {
   return (
     <section id="about" className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-[hsl(var(--section-bg))]">
@@ -19,11 +21,11 @@ const About = () => {
             <div className="relative">
               <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-3xl bg-gradient-to-br from-primary to-secondary overflow-hidden shadow-2xl">
                 <img
-                  src="/placeholder.svg"
+                  src={profile}
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />
-              </div>
+             </div>
               <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-accent rounded-full blur-2xl opacity-50 animate-pulse-glow"></div>
             </div>
           </div>

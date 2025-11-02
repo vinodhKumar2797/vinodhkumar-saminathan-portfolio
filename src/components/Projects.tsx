@@ -8,7 +8,7 @@ const Projects = () => {
       title: "LinkedIn Profile ETL Pipeline",
       description: "Built incremental ETL for LinkedIn profiles & images with idempotent runs. Reduced full reloads by 70% and validation effort by 40%. Implemented efficient data processing with change detection and validation mechanisms.",
       technologies: ["Java", "ETL", "Data Processing", "Pipeline Architecture"],
-      github: "#",
+      github: "https://github.com/vinodhKumar2797/ETL_PIPELINE",
       demo: "#"
     },
     {
