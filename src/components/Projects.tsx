@@ -43,7 +43,7 @@ const Projects = () => {
       title: "Cloud-Native Application Deployment",
       description: "Deployed Dockerized microservices on Kubernetes with AWS infrastructure (EKS/ECS, Lambda, DynamoDB). Implemented Infrastructure as Code using Terraform and established CI/CD pipelines for automated deployments.",
       technologies: ["Docker", "Kubernetes", "AWS", "Terraform", "CI/CD"],
-      github: "#",
+      github: "https://github.com/vinodhKumar2797/Cloud-Native-Application-Deployment",
       demo: "#"
     }
   ];
