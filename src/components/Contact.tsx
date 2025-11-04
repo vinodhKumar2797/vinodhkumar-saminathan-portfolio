@@ -27,8 +27,8 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "vsamina1@depaul.edu",
-      href: "mailto:vsamina1@depaul.edu"
+      value: "vinothkumars395@gmail.com",
+      href: "mailto:vinothkumars395@gmail.com"
     },
     {
       icon: Phone,

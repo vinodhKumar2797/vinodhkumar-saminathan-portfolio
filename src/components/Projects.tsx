@@ -15,28 +15,21 @@ const Projects = () => {
       title: "E-Commerce Microservices Platform",
       description: "Applied SOLID principles with Singleton/Factory/Builder patterns to modularize authentication, catalog, and order services. Accelerated delivery by 25% and lifted test coverage to 65%. Implemented scalable microservices architecture.",
       technologies: ["Spring Boot", "Microservices", "Design Patterns", "JUnit"],
-      github: "#",
-      demo: "#"
-    },
-    {
-      title: "High-Concurrency Search System",
-      description: "Implemented high-concurrency client-server with parallel indexing and multi-term search using TF-IDF/BM25 algorithms. Sustained high QPS with low p95 latency. Shipped with reproducible scripts and comprehensive documentation.",
-      technologies: ["Java", "Concurrent Programming", "Search Algorithms", "Performance Optimization"],
-      github: "#",
+      github: "https://github.com/vinodhKumar2797/E-Commerce-Microservices-Platform",
       demo: "#"
     },
     {
       title: "Automated Testing Framework",
       description: "Established automated testing stack with Cucumber (BDD), Selenium WebDriver, and TestNG. Standardized Page Object patterns and created living documentation. Improved test coverage and reliability across microservices.",
       technologies: ["Cucumber", "Selenium", "TestNG", "BDD", "Test Automation"],
-      github: "#",
+      github: "https://github.com/vinodhKumar2797/Automated-Testing-Framework",
       demo: "#"
     },
     {
       title: "Real-Time Event Processing System",
       description: "Integrated Kafka for real-time messaging across distributed systems. Implemented event-driven architecture that reduced latency by 30% and enabled seamless distributed communication with fault tolerance.",
       technologies: ["Kafka", "Spring Boot", "Event-Driven Architecture", "Distributed Systems"],
-      github: "#",
+      github: "https://github.com/vinodhKumar2797/Real-Time-Event-Processing_Kafka",
       demo: "#"
     },
     {
