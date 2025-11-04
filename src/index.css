@@ -41,10 +41,10 @@ All colors MUST be HSL.
     /* Portfolio specific colors */
     --hero-gradient-from: 210 25% 97%;
     --hero-gradient-to: 195 25% 97%;
-    --code-bg: 210 40% 8%;
-    --code-text: 195 100% 60%;
-    --code-keyword: 180 100% 60%;
-    --code-string: 270 70% 70%;
+    --code-bg: 270 60% 15%;
+    --code-text: 0 0% 100%;
+    --code-keyword: 270 80% 70%;
+    --code-string: 0 0% 100%;
     --section-bg: 0 0% 100%;
     --skill-tag: 195 100% 50%;
     --skill-tag-hover: 195 100% 40%;
@@ -90,10 +90,10 @@ All colors MUST be HSL.
 
     --hero-gradient-from: 210 40% 6%;
     --hero-gradient-to: 195 40% 8%;
-    --code-bg: 210 45% 3%;
-    --code-text: 195 100% 60%;
-    --code-keyword: 180 100% 60%;
-    --code-string: 270 70% 70%;
+    --code-bg: 270 60% 15%;
+    --code-text: 0 0% 100%;
+    --code-keyword: 270 80% 70%;
+    --code-string: 0 0% 100%;
     --section-bg: 210 35% 8%;
     --skill-tag: 195 100% 50%;
     --skill-tag-hover: 195 100% 40%;
