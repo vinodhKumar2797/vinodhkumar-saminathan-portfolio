@@ -9,7 +9,7 @@ const Projects = () => {
       description: "Built incremental ETL for LinkedIn profiles & images with idempotent runs. Reduced full reloads by 70% and validation effort by 40%. Implemented efficient data processing with change detection and validation mechanisms.",
       technologies: ["Java", "ETL", "Data Processing", "Pipeline Architecture"],
       github: "https://github.com/vinodhKumar2797/ETL_PIPELINE",
-      demo: "https://linkedin-profile-etl-vinodhkumar-saminathan.bolt.host"
+      demo: "https://vinodhkumar2797.github.io/vinodhkumar-saminathan-etl-linkedprofiles-demo-website/"
     },
     {
       title: "E-Commerce Microservices Platform",
