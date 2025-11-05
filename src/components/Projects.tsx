@@ -23,7 +23,7 @@ const Projects = () => {
       description: "Established automated testing stack with Cucumber (BDD), Selenium WebDriver, and TestNG. Standardized Page Object patterns and created living documentation. Improved test coverage and reliability across microservices.",
       technologies: ["Cucumber", "Selenium", "TestNG", "BDD", "Test Automation"],
       github: "https://github.com/vinodhKumar2797/Automated-Testing-Framework",
-      demo: "#"
+      demo: "https://www.youtube.com/watch?v=JctRYXYFx7w"
     },
     {
       title: "Real-Time Event Processing System",
