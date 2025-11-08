@@ -34,57 +34,71 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-[hsl(var(--section-bg))]">
-      <div className="container mx-auto">
-        <div className="text-center mb-12">
-          <h3 className="text-sm font-semibold text-primary uppercase tracking-wider mb-2">
+    <section id="experience" className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-[hsl(var(--section-bg))] relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5 pointer-events-none" />
+      <div className="container mx-auto relative">
+        <div className="text-center mb-16">
+          <h3 className="text-sm font-semibold text-primary uppercase tracking-widest mb-3">
             CAREER PATH
           </h3>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-4">
             Experience
           </h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full" />
         </div>
 
-        <div className="max-w-4xl mx-auto space-y-6">
-          {experiences.map((exp, idx) => (
-            <Card
-              key={idx}
-              className="p-6 sm:p-8 bg-card border-l-4 border-primary hover:shadow-xl transition-all duration-300 animate-fade-in-up"
-              style={{ animationDelay: `${idx * 0.1}s` }}
-            >
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                  <Briefcase className="w-6 h-6 sm:w-7 sm:h-7 text-primary" />
-                </div>
-                <div className="flex-1">
-                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-3">
-                    <h3 className="text-xl sm:text-2xl font-bold text-foreground">
-                      {exp.position}
-                    </h3>
-                    <span className="text-sm font-semibold text-secondary">
-                      {exp.duration}
-                    </span>
+        <div className="max-w-5xl mx-auto relative">
+          {/* Timeline line */}
+          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-secondary to-primary/20 hidden md:block" />
+          
+          <div className="space-y-8">
+            {experiences.map((exp, idx) => (
+              <div
+                key={idx}
+                className="relative animate-fade-in-up"
+                style={{ animationDelay: `${idx * 0.15}s` }}
+              >
+                {/* Timeline dot */}
+                <div className="absolute left-6 top-8 w-5 h-5 rounded-full bg-primary border-4 border-background hidden md:block z-10" />
+                
+                <Card className="ml-0 md:ml-20 p-8 bg-card border-2 hover:border-primary/50 hover:shadow-2xl transition-all duration-500 group">
+                  <div className="flex items-start gap-6">
+                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                      <Briefcase className="w-8 h-8 text-primary" />
+                    </div>
+                    <div className="flex-1">
+                      <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-3 mb-4">
+                        <div>
+                          <h3 className="text-2xl sm:text-3xl font-bold text-foreground group-hover:text-primary transition-colors">
+                            {exp.position}
+                          </h3>
+                          <h4 className="text-xl font-semibold text-primary mt-1">
+                            {exp.company}
+                          </h4>
+                        </div>
+                        <span className="inline-flex items-center px-4 py-2 bg-primary/10 text-primary text-sm font-bold rounded-full border border-primary/20">
+                          {exp.duration}
+                        </span>
+                      </div>
+                      <p className="text-foreground/80 mb-6 leading-relaxed text-base">
+                        {exp.description}
+                      </p>
+                      <div className="flex flex-wrap gap-2">
+                        {exp.technologies.map((tech) => (
+                          <span
+                            key={tech}
+                            className="px-4 py-2 bg-gradient-to-r from-muted to-muted/50 text-foreground text-sm rounded-lg font-medium hover:from-primary/10 hover:to-secondary/10 hover:scale-105 transition-all duration-300"
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
                   </div>
-                  <h4 className="text-lg font-semibold text-primary mb-3">
-                    {exp.company}
-                  </h4>
-                  <p className="text-foreground/80 mb-4 leading-relaxed">
-                    {exp.description}
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    {exp.technologies.map((tech) => (
-                      <span
-                        key={tech}
-                        className="px-3 py-1 bg-muted text-muted-foreground text-sm rounded-full font-medium"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
+                </Card>
               </div>
-            </Card>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
