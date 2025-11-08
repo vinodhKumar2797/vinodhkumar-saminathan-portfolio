@@ -5,61 +5,61 @@ const Skills = () => {
     {
       title: "Backend & Languages",
       skills: [
-        { name: "Java", level: 95 },
-        { name: "Spring Boot", level: 92 },
-        { name: "Hibernate/JPA", level: 88 },
-        { name: "Node.js", level: 85 },
-        { name: "Python", level: 80 },
-        { name: "C++", level: 75 },
+        { name: "Java", level: 95, symbol: "☕" },
+        { name: "Spring Boot", level: 92, symbol: "🍃" },
+        { name: "Hibernate/JPA", level: 88, symbol: "💾" },
+        { name: "Node.js", level: 85, symbol: "⬢" },
+        { name: "Python", level: 80, symbol: "🐍" },
+        { name: "C++", level: 75, symbol: "C++" },
       ]
     },
     {
       title: "Frontend",
       skills: [
-        { name: "React.js", level: 90 },
-        { name: "TypeScript", level: 88 },
-        { name: "JavaScript", level: 92 },
-        { name: "HTML5/CSS3", level: 95 },
-        { name: "Tailwind CSS", level: 90 },
-        { name: "GraphQL", level: 82 },
+        { name: "React.js", level: 90, symbol: "⚛" },
+        { name: "TypeScript", level: 88, symbol: "TS" },
+        { name: "JavaScript", level: 92, symbol: "JS" },
+        { name: "HTML5/CSS3", level: 95, symbol: "🌐" },
+        { name: "Tailwind CSS", level: 90, symbol: "🎨" },
+        { name: "GraphQL", level: 82, symbol: "◈" },
       ]
     },
     {
       title: "Databases",
       skills: [
-        { name: "MySQL", level: 90 },
-        { name: "PostgreSQL", level: 88 },
-        { name: "MongoDB", level: 85 },
-        { name: "Oracle", level: 82 },
-        { name: "Redis", level: 80 },
-        { name: "DynamoDB", level: 78 },
+        { name: "MySQL", level: 90, symbol: "🐬" },
+        { name: "PostgreSQL", level: 88, symbol: "🐘" },
+        { name: "MongoDB", level: 85, symbol: "🍃" },
+        { name: "Oracle", level: 82, symbol: "⚡" },
+        { name: "Redis", level: 80, symbol: "◆" },
+        { name: "DynamoDB", level: 78, symbol: "⚡" },
       ]
     },
     {
       title: "Cloud & DevOps",
       skills: [
-        { name: "AWS", level: 90 },
-        { name: "Docker", level: 88 },
-        { name: "Kubernetes", level: 85 },
-        { name: "Jenkins", level: 82 },
-        { name: "Terraform", level: 80 },
-        { name: "Azure", level: 75 },
+        { name: "AWS", level: 90, symbol: "☁" },
+        { name: "Docker", level: 88, symbol: "🐳" },
+        { name: "Kubernetes", level: 85, symbol: "☸" },
+        { name: "Jenkins", level: 82, symbol: "🔧" },
+        { name: "Terraform", level: 80, symbol: "🏗" },
+        { name: "Azure", level: 75, symbol: "☁" },
       ]
     },
     {
       title: "Testing & Tools",
       skills: [
-        { name: "JUnit", level: 92 },
-        { name: "Selenium", level: 88 },
-        { name: "Mockito", level: 90 },
-        { name: "Git", level: 95 },
-        { name: "Maven", level: 85 },
-        { name: "Cucumber", level: 82 },
+        { name: "JUnit", level: 92, symbol: "✓" },
+        { name: "Selenium", level: 88, symbol: "🔍" },
+        { name: "Mockito", level: 90, symbol: "🎭" },
+        { name: "Git", level: 95, symbol: "⎇" },
+        { name: "Maven", level: 85, symbol: "📦" },
+        { name: "Cucumber", level: 82, symbol: "🥒" },
       ]
     }
   ];
 
-  const CircularProgress = ({ level, name }: { level: number; name: string }) => {
+  const CircularProgress = ({ level, name, symbol }: { level: number; name: string; symbol: string }) => {
     const radius = 45;
     const circumference = 2 * Math.PI * radius;
     const strokeDashoffset = circumference - (level / 100) * circumference;
@@ -95,8 +95,8 @@ const Skills = () => {
             />
           </svg>
           <div className="absolute inset-0 flex items-center justify-center">
-            <span className="text-xl font-bold text-foreground group-hover:scale-110 transition-transform">
-              {level}%
+            <span className="text-3xl font-bold text-foreground group-hover:scale-125 transition-transform">
+              {symbol}
             </span>
           </div>
         </div>
@@ -138,7 +138,7 @@ const Skills = () => {
                       className="animate-fade-in-up"
                       style={{ animationDelay: `${(idx * 0.15) + (skillIdx * 0.05)}s` }}
                     >
-                      <CircularProgress level={skill.level} name={skill.name} />
+                      <CircularProgress level={skill.level} name={skill.name} symbol={skill.symbol} />
                     </div>
                   ))}
                 </div>
