@@ -35,11 +35,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <div className="text-center text-sm text-foreground/60">
-            <p className="flex items-center gap-2 justify-center">
-              © {currentYear} Vinodhkumar Saminathan. Built with
-              <Heart className="w-4 h-4 text-red-500 fill-red-500" />
-              using React & Spring Boot
-            </p>
+           
           </div>
         </div>
       </div>
