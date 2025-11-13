@@ -37,5 +37,5 @@ This project is built with:
 
 ## How can I deploy this project?
 
-git push and commit will automatically deploy in github  host
+git push and commit will automatically deploy in github  host  saminathan
 
